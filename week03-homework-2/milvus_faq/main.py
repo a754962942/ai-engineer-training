@@ -15,7 +15,6 @@ import sys
 import uuid
 
 from pydantic import BaseModel
-from typing import Optional
 from llama_index.core import Settings, Response
 from llama_index.core.base.response.schema import StreamingResponse, AsyncStreamingResponse, PydanticResponse
 from llama_index.llms.openai_like import OpenAILike
@@ -23,8 +22,6 @@ from llama_index.core.node_parser import MarkdownNodeParser,NodeParser
 from llama_index.core import Document
 from llama_index.embeddings.dashscope import DashScopeEmbedding,DashScopeTextEmbeddingModels
 from llama_index.core import VectorStoreIndex,StorageContext
-from llama_index.core.retrievers import VectorIndexRetriever
-from llama_index.core.query_engine import RetrieverQueryEngine
 from llama_index.vector_stores.milvus import MilvusVectorStore
 import os
 from fastapi import FastAPI
