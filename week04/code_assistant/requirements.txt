@@ -1,0 +1,16 @@
+# 核心依赖
+langgraph>=0.0.40
+langchain-community>=0.0.20
+langchain-core>=0.1.0
+
+# 通义千问模型支持
+dashscope>=1.10.0
+
+# 类型注解支持
+typing-extensions>=4.0.0
+
+# 开发依赖 (可选)
+pytest>=7.0.0
+black>=22.0.0
+flake8>=4.0.0
+mypy>=1.0.0

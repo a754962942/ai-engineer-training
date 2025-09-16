@@ -1,0 +1,32 @@
+{
+  "intents": [
+    "query_order",
+    "refund_request", 
+    "issue_invoice",
+    "logistics_inquiry",
+    "cancel_order",
+    "unknown"
+  ],
+  "enable_rule_engine": true,
+  "enable_ml_model": false,
+  "enable_llm_router": true,
+  "voting_strategy": "priority",
+  "rule_keywords": {
+    "query_order": ["查订单", "订单号", "订单状态", "我的订单"],
+    "refund_request": ["退钱", "退款", "取消", "申请退款"],
+    "issue_invoice": ["开发票", "要发票", "报销", "发票"],
+    "logistics_inquiry": ["物流", "快递", "配送", "运输"],
+    "cancel_order": ["取消订单", "不要了", "取消"]
+  },
+  "ml_model": {
+    "model_name": "qwen-turbo",
+    "api_key": "your_dashscope_api_key_here",
+    "base_url": "https://dashscope.aliyuncs.com/api/v1"
+  },
+  "llm": {
+    "model": "qwen-plus",
+    "temperature": 0,
+    "api_key": "your_dashscope_api_key_here",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  }
+}

@@ -1,0 +1,11 @@
+                      system prompt （职业生涯规划、 简历改写、 转岗评审）
+                          |
+user prompt       -》    环境     -》 答案
+                        （要求、                             解答）
+                        固定prompt（姓名，工作情况）        大模型基于用户信息 回答 特点格式
+                         1\2\5\6  
+                        1\2\5\6\7\8
+下拉列表（职业生涯规划、 简历改写、 转岗评审）
+我的姓名是wilson， 性别：男， 工作情况：程序员和。。   analysis_types:"career"
+我的姓名是wilson， 性别：男， 工作情况：程序员和。     analysis_types:skills
+

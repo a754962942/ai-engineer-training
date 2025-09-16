@@ -30,6 +30,8 @@ dependencies = [
     "duckduckgo-search",
     "ddgs",
     "openai",
+    "langchain-nomic",
+    "nomic[local]",
 ]
 
 [project.optional-dependencies]
